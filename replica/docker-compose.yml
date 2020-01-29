@@ -1,0 +1,17 @@
+version: '3.0'
+services:
+  rs:
+    image: mongo:4
+    entrypoint: mongod
+    deploy:
+      resources:
+        limits:
+          memory: 500M
+    volumes:
+    - /data/db
+    - .:/code
+    command: |
+        --oplogSize 5 --replSet rs0  --bind_ip 0.0.0.0
+
+
+

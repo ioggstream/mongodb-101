@@ -1,0 +1,10 @@
+rs_config = {
+ "_id": "rs0",
+ "version": 1,
+ "members": [
+    { "_id": 0, "host": "replica_rs_1", "tags": {"dc": "rm", "disk": "ssd" }},
+    { "_id": 1, "host": "replica_rs_2", "tags": {"dc":"mi"}},
+    { "_id": 2, "host": "replica_rs_3", "arbiterOnly": true}
+ ]
+}
+
