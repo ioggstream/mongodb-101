@@ -4,8 +4,8 @@
   "description": "Reveal sample app for OpenShift 3",
   "main": "server.js",
   "dependencies": {
-    "mongodb": "^3.6.1",
-    "reveal-md": "^3.4.1"
+    "mongodb": "^4.0.0",
+    "reveal-md": "^5.0.0"
   },
   "engine": {
     "node": "*",
